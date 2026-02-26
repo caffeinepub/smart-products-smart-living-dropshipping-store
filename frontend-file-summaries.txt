@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application entry point that sets up TanStack Router with code-based routing, wraps the app in CartProvider and CurrencyProvider, and registers all 15 page routes including shop, product detail, checkout, order confirmation, payment status, and all policy pages.",
+  "frontend/src/pages/ProductDetailPage.tsx": "Full product detail page showing image gallery, product info with pricing/discount badge, features list, quantity selector, add-to-cart/buy-now buttons, trust badges, social share buttons, and a reviews section with submission form.",
+  "frontend/src/pages/CheckoutPage.tsx": "Multi-section checkout page with shipping address form (with validation), payment method selector, order summary panel with line items, and a place-order button that calls the backend submitOrder and navigates to confirmation.",
+  "frontend/src/pages/OrderConfirmationPage.tsx": "Order confirmation page that clears the cart on mount, displays the order number, order date, estimated delivery date, and a continue shopping link.",
+  "frontend/src/pages/PaymentSuccessPage.tsx": "Simple success page shown after a successful Stripe payment redirect, with a green checkmark and link back to home.",
+  "frontend/src/pages/PaymentFailurePage.tsx": "Simple failure page shown after a failed or cancelled Stripe payment redirect, with a red X icon and a \"Try Again\" link back to checkout.",
+  "frontend/src/pages/AboutPage.tsx": "About Us page with company stats, brand story, mission, and values; all references to the old store name replaced with \"Helping Hand\".",
+  "frontend/src/pages/ContactPage.tsx": "Contact page with company info cards and a contact form; email address updated to support@helpinghand.store.",
+  "frontend/src/pages/FaqPage.tsx": "FAQ page with 10 accordion Q&A items; support email updated to support@helpinghand.store.",
+  "frontend/src/pages/ShippingPolicyPage.tsx": "Shipping Policy page with stats summary and 7 policy sections; no brand name text was present but file is clean and consistent.",
+  "frontend/src/pages/ReturnPolicyPage.tsx": "Return & Refund Policy page with 7 sections; support email updated to support@helpinghand.store.",
+  "frontend/src/pages/PrivacyPolicyPage.tsx": "Privacy Policy page with 8 sections; all references to the old brand name replaced with \"Helping Hand\" including contact email.",
+  "frontend/src/pages/TermsPage.tsx": "Terms & Conditions page with 10 policy sections; all references to the old brand name replaced with \"Helping Hand\" including contact email.",
+  "frontend/src/components/layout/RootLayout.tsx": "Root layout component that renders the sticky Header, page Outlet, Footer, LiveChatWidget overlay, AbandonedCartBanner, and Sonner Toaster for all pages.",
+  "frontend/index.html": "HTML entry point with updated page title to \"Helping Hand - Smart Products. Smart Living.\"",
+  "frontend/src/components/layout/Header.tsx": "Sticky header with navigation, search, currency selector, and cart button; logo alt text updated to \"Helping Hand\".",
+  "frontend/src/components/layout/Footer.tsx": "Site footer with brand info, quick links, and contact details; all references to the old brand name replaced with \"Helping Hand\" including copyright, social links, and email addresses.",
+  "frontend/src/components/home/WhyChooseUs.tsx": "\"Why Choose Us\" section with benefit cards and trust badges; heading updated from \"Why Choose SmartLiving?\" to \"Why Choose Helping Hand?\"."
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-all-occurrences-of-the-current-brand-store-name-e-g-smartliving-store-smart-living-store-or-any-placeholder-brand-name-with-helping-hand-across-every-frontend-file-where-the-brand-name-appears-including-the-header-logo-text-footer-brand-name-page-titles-about-page-terms-conditions-page-privacy-policy-page-and-any-other-page-or-component-that-references-the-store-name",
+      "featureTitle": "Replace all occurrences of the current brand/store name (e.g., 'SmartLiving Store', 'Smart Living Store', or any placeholder brand name) with 'Helping Hand' across every frontend file where the brand name appears, including the Header logo text, Footer brand name, page titles, About page, Terms & Conditions page, Privacy Policy page, and any other page or component that references the store name.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/home/WhyChooseUs.tsx",
+        "frontend/src/components/layout/Footer.tsx",
+        "frontend/src/components/layout/Header.tsx",
+        "frontend/src/pages/AboutPage.tsx",
+        "frontend/src/pages/ContactPage.tsx",
+        "frontend/src/pages/FaqPage.tsx",
+        "frontend/src/pages/PrivacyPolicyPage.tsx",
+        "frontend/src/pages/ReturnPolicyPage.tsx",
+        "frontend/src/pages/TermsPage.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "stripe@3.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0",
+        "http-outcalls@3.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

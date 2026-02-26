@@ -1,0 +1,62 @@
+{
+  "kind": "build_request",
+  "title": "Update brand name to 'Helping Hand' across the entire site",
+  "projectName": "Helping Hand",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Replace all occurrences of the current brand/store name (e.g., 'SmartLiving Store', 'Smart Living Store', or any placeholder brand name) with 'Helping Hand' across every frontend file where the brand name appears, including the Header logo text, Footer brand name, page titles, About page, Terms & Conditions page, Privacy Policy page, and any other page or component that references the store name.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "BRAND NAME- HELPING HAND"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Header logo/brand text reads 'Helping Hand'",
+        "The Footer brand name reads 'Helping Hand'",
+        "The HTML page title in index.html is updated to reflect 'Helping Hand'",
+        "The About page references 'Helping Hand' as the store name",
+        "The Terms & Conditions page references 'Helping Hand' as the store name",
+        "The Privacy Policy page references 'Helping Hand' as the store name",
+        "No occurrences of the old brand name remain visible anywhere on the site",
+        "The tagline 'Smart Products. Smart Living.' is preserved unchanged"
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Update the backend Motoko actor so that any hardcoded store name or brand name references (e.g., in metadata, email content, or any text field) reflect 'Helping Hand' instead of the previous brand name.",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "BRAND NAME- HELPING HAND"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All backend text constants or metadata referencing the store name use 'Helping Hand'",
+        "No old brand name remains in any backend-facing string"
+      ]
+    }
+  ],
+  "constraints": [
+    "The tagline 'Smart Products. Smart Living.' must remain unchanged",
+    "Do not alter any visual theme, layout, or design — only the brand name text should change",
+    "Do not modify files listed in frontend.immutablePaths"
+  ],
+  "nonGoals": [
+    "Changing the tagline or any other brand identity element",
+    "Redesigning any page layout or component",
+    "Adding new pages or features"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

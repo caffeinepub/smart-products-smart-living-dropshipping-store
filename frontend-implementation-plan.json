@@ -1,0 +1,98 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update brand name to 'Helping Hand' across the entire site",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Replace all occurrences of the current brand/store name with 'Helping Hand' across every frontend file where the brand name appears, including Header, Footer, page titles, About, Terms, Privacy Policy, and other pages or components",
+      "acceptanceCriteria": [
+        "The Header logo/brand text reads 'Helping Hand'",
+        "The Footer brand name reads 'Helping Hand'",
+        "The HTML page title in index.html is updated to reflect 'Helping Hand'",
+        "The About page references 'Helping Hand' as the store name",
+        "The Terms & Conditions page references 'Helping Hand' as the store name",
+        "The Privacy Policy page references 'Helping Hand' as the store name",
+        "No occurrences of the old brand name remain visible anywhere on the site",
+        "The tagline 'Smart Products. Smart Living.' is preserved unchanged"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the page title from 'Smart Products Smart Living Dropshipping Store' to 'Helping Hand - Smart Products. Smart Living.' to reflect the new brand name while preserving the tagline"
+        },
+        {
+          "path": "frontend/src/components/layout/Header.tsx",
+          "operation": "modify",
+          "description": "Replace any hardcoded brand name text (e.g., 'SmartLiving Store', 'Smart Living Store') in the logo/brand area with 'Helping Hand'. Preserve the tagline 'Smart Products. Smart Living.' if it appears separately"
+        },
+        {
+          "path": "frontend/src/components/layout/Footer.tsx",
+          "operation": "modify",
+          "description": "Replace all occurrences of the old brand name in the footer brand info section with 'Helping Hand'. Preserve the tagline 'Smart Products. Smart Living.' unchanged"
+        },
+        {
+          "path": "frontend/src/pages/AboutPage.tsx",
+          "operation": "modify",
+          "description": "Replace all references to the old store name (e.g., 'SmartLiving Store', 'Smart Living Store') with 'Helping Hand' throughout the About page content, including brand story, mission statement, and company stats sections"
+        },
+        {
+          "path": "frontend/src/pages/TermsPage.tsx",
+          "operation": "modify",
+          "description": "Replace all references to 'SmartLiving Store' or similar brand names with 'Helping Hand' throughout the Terms & Conditions page content array"
+        },
+        {
+          "path": "frontend/src/pages/PrivacyPolicyPage.tsx",
+          "operation": "modify",
+          "description": "Replace all occurrences of the old brand name with 'Helping Hand' throughout the privacy policy sections covering data collection, usage, sharing, security, cookies, user rights, and policy changes"
+        },
+        {
+          "path": "frontend/src/pages/HomePage.tsx",
+          "operation": "modify",
+          "description": "Review and replace any brand name references with 'Helping Hand' if present in the home page component or its composed sections"
+        },
+        {
+          "path": "frontend/src/pages/ShopPage.tsx",
+          "operation": "modify",
+          "description": "Review and replace any brand name references with 'Helping Hand' if present in the shop page component"
+        },
+        {
+          "path": "frontend/src/pages/ContactPage.tsx",
+          "operation": "modify",
+          "description": "Replace any brand name references in the contact page company info cards or contact form with 'Helping Hand'"
+        },
+        {
+          "path": "frontend/src/pages/FaqPage.tsx",
+          "operation": "modify",
+          "description": "Replace any brand name references in the FAQ questions and answers with 'Helping Hand'"
+        },
+        {
+          "path": "frontend/src/pages/ReturnPolicyPage.tsx",
+          "operation": "modify",
+          "description": "Replace all occurrences of the old brand name with 'Helping Hand' throughout the return and refund policy sections"
+        },
+        {
+          "path": "frontend/src/pages/ShippingPolicyPage.tsx",
+          "operation": "modify",
+          "description": "Replace all occurrences of the old brand name with 'Helping Hand' throughout the shipping policy sections and stat cards"
+        },
+        {
+          "path": "frontend/src/components/home/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace any brand name references in the hero banner headline or CTA text with 'Helping Hand'. Preserve the tagline 'Smart Products. Smart Living.' unchanged"
+        },
+        {
+          "path": "frontend/src/components/home/Newsletter.tsx",
+          "operation": "modify",
+          "description": "Replace any brand name references in the newsletter subscription section with 'Helping Hand'"
+        },
+        {
+          "path": "frontend/src/components/home/WhyChooseUs.tsx",
+          "operation": "modify",
+          "description": "Replace any brand name references in the store benefit cards or trust badges section with 'Helping Hand'"
+        }
+      ]
+    }
+  ]
+}

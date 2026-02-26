@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Professional dropshipping eCommerce website with premium design, 15 product categories, full homepage sections, individual product pages, policy pages, multi-payment integration, and extra conversion features. Brand name: 'Helping Hand'. Tagline: 'Smart Products. Smart Living.'",
+  "architectural_notes": [
+    "Mobile-first responsive design is a core requirement; all layouts must prioritize mobile viewports",
+    "Trust-building elements (reviews, badges, guarantees, secure checkout) must appear on homepage and product pages",
+    "Multi-currency and multi-payment support (Stripe, PayPal, UPI, Cards) required throughout checkout flow"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-apply-a-clean-minimal-premium-visual-theme-across-the-entire-site-white-light-gray-background-f9fafb-bold-coral-orange-accent-color-ff6b35-for-ctas-and-highlights-crisp-sans-serif-typography-e-g-inter-generous-whitespace-subtle-card-shadows-and-consistent-rounded-corners-enforce-this-theme-globally-with-a-tailwind-config-extension-all-pages-must-be-mobile-first-responsive",
+      "title": "Apply a clean, minimal, premium visual theme across the entire site: white/light gray background (#F9FAFB), bold coral/orange accent color (#FF6B35) for CTAs and highlights, crisp sans-serif typography (e.g., Inter), generous whitespace, subtle card shadows, and consistent rounded corners. Enforce this theme globally with a Tailwind config extension. All pages must be mobile-first responsive.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-full-homepage-with-the-following-sections-in-order-1-hero-section-with-bold-headline-discover-products-that-elevate-your-life-tagline-smart-products-smart-living-and-a-shop-now-cta-button-2-featured-collections-grid-showing-6-product-category-tiles-3-best-selling-products-horizontal-scroll-or-grid-4-8-product-cards-4-limited-time-offers-banner-with-countdown-timer-and-discount-badge-5-customer-reviews-testimonials-carousel-at-least-6-mock-reviews-with-star-ratings-names-and-avatars-6-why-choose-us-section-with-icons-for-free-shipping-secure-payment-easy-returns-and-24-7-support-7-newsletter-subscription-form-with-email-input-and-subscribe-button-8-footer-with-links-to-all-policy-pages-social-media-icons-contact-info-and-copyright",
+      "title": "Build a full Homepage with the following sections in order: (1) Hero section with bold headline 'Discover Products That Elevate Your Life', tagline 'Smart Products. Smart Living.', and a 'Shop Now' CTA button; (2) Featured Collections grid showing 6 product category tiles; (3) Best-Selling Products horizontal scroll or grid (4–8 product cards); (4) Limited-Time Offers banner with countdown timer and discount badge; (5) Customer Reviews/Testimonials carousel (at least 6 mock reviews with star ratings, names, and avatars); (6) 'Why Choose Us' section with icons for Free Shipping, Secure Payment, Easy Returns, and 24/7 Support; (7) Newsletter subscription form with email input and subscribe button; (8) Footer with links to all policy pages, social media icons, contact info, and copyright.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-product-listing-page-that-shows-a-grid-of-product-cards-filterable-by-category-each-product-card-must-display-product-image-product-name-star-rating-original-price-with-a-strikethrough-discounted-price-discount-percentage-badge-and-an-add-to-cart-button-include-a-sidebar-or-top-filter-bar-for-category-price-range-and-sort-order-popular-price-low-high-price-high-low-newest",
+      "title": "Build a Product Listing page that shows a grid of product cards filterable by category. Each product card must display: product image, product name, star rating, original price with a strikethrough, discounted price, discount percentage badge, and an 'Add to Cart' button. Include a sidebar or top filter bar for category, price range, and sort order (Popular, Price Low-High, Price High-Low, Newest).",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-product-detail-page-accessible-via-route-product-id-it-must-include-multiple-high-quality-product-image-thumbnails-with-a-main-image-viewer-product-title-short-benefit-focused-description-key-features-as-bullet-points-original-and-discounted-price-with-discount-badge-star-rating-with-review-count-quantity-selector-add-to-cart-and-buy-now-buttons-accent-colored-trust-badges-row-secure-checkout-money-back-guarantee-free-shipping-easy-returns-and-a-customer-reviews-section-with-individual-star-ratings-reviewer-name-date-and-review-text-at-least-4-mock-reviews-per-product",
+      "title": "Build a Product Detail page accessible via route /product/:id. It must include: multiple high-quality product image thumbnails with a main image viewer, product title, short benefit-focused description, key features as bullet points, original and discounted price with discount badge, star rating with review count, quantity selector, 'Add to Cart' and 'Buy Now' buttons (accent-colored), trust badges row (Secure Checkout, Money-Back Guarantee, Free Shipping, Easy Returns), and a Customer Reviews section with individual star ratings, reviewer name, date, and review text (at least 4 mock reviews per product).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-persistent-shopping-cart-with-a-slide-out-drawer-or-dedicated-cart-page-the-cart-must-show-product-image-name-price-quantity-controls-line-total-remove-item-button-subtotal-estimated-shipping-line-and-a-proceed-to-checkout-button-include-an-abandoned-cart-recovery-ui-if-the-user-has-items-in-the-cart-and-navigates-away-or-closes-the-drawer-show-a-persistent-bottom-banner-or-toast-prompting-them-to-return-to-their-cart",
+      "title": "Implement a persistent Shopping Cart with a slide-out drawer or dedicated /cart page. The cart must show: product image, name, price, quantity controls, line total, remove item button, subtotal, estimated shipping line, and a Proceed to Checkout button. Include an Abandoned Cart Recovery UI: if the user has items in the cart and navigates away or closes the drawer, show a persistent bottom banner or toast prompting them to return to their cart.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-checkout-page-at-checkout-with-form-fields-for-full-name-email-phone-shipping-address-street-city-state-zip-country-with-dropdown-and-order-summary-panel-include-a-payment-method-selector-showing-stripe-credit-debit-card-form-paypal-button-upi-id-field-and-a-currency-selector-dropdown-for-multi-currency-display-usd-eur-gbp-inr-aud-at-minimum-show-trust-badges-and-a-place-order-button-on-successful-order-submission-navigate-to-an-order-confirmation-page-with-order-number-and-summary",
+      "title": "Build a Checkout page at /checkout with form fields for: full name, email, phone, shipping address (street, city, state, zip, country with dropdown), and order summary panel. Include a Payment Method selector showing Stripe (credit/debit card form), PayPal button, UPI ID field, and a currency selector dropdown for multi-currency display (USD, EUR, GBP, INR, AUD at minimum). Show trust badges and a 'Place Order' button. On successful order submission, navigate to an Order Confirmation page with order number and summary.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-live-chat-support-widget-a-floating-chat-bubble-fixed-at-the-bottom-right-corner-clicking-it-opens-a-chat-panel-showing-a-welcome-message-from-a-support-agent-and-a-text-input-since-real-time-messaging-is-not-supported-simulate-responses-with-pre-written-auto-replies-based-on-keywords-shipping-return-payment-etc",
+      "title": "Add a Live Chat Support widget: a floating chat bubble fixed at the bottom-right corner. Clicking it opens a chat panel showing a welcome message from a support agent and a text input. Since real-time messaging is not supported, simulate responses with pre-written auto-replies based on keywords (shipping, return, payment, etc.).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-social-media-integration-in-the-footer-and-product-pages-display-clickable-social-media-icon-links-for-facebook-instagram-twitter-x-tiktok-and-youtube-on-product-pages-include-share-on-facebook-and-share-on-instagram-buttons-that-open-the-respective-share-urls-these-are-standard-hyperlinks-no-api-keys-required",
+      "title": "Add Social Media integration in the footer and product pages: display clickable social media icon links for Facebook, Instagram, Twitter/X, TikTok, and YouTube. On product pages, include 'Share on Facebook' and 'Share on Instagram' buttons that open the respective share URLs. These are standard hyperlinks — no API keys required.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-global-site-header-navigation-bar-with-brand-logo-on-the-left-main-nav-links-home-shop-categories-about-contact-a-search-bar-that-filters-products-by-name-a-cart-icon-with-live-item-count-badge-and-a-currency-selector-dropdown-the-header-must-be-sticky-on-scroll-and-collapse-into-a-hamburger-menu-on-mobile",
+      "title": "Add a global site header/navigation bar with: brand logo on the left, main nav links (Home, Shop, Categories, About, Contact), a search bar that filters products by name, a cart icon with live item count badge, and a currency selector dropdown. The header must be sticky on scroll and collapse into a hamburger menu on mobile.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-all-occurrences-of-the-current-brand-store-name-e-g-smartliving-store-smart-living-store-or-any-placeholder-brand-name-with-helping-hand-across-every-frontend-file-where-the-brand-name-appears-including-the-header-logo-text-footer-brand-name-page-titles-about-page-terms-conditions-page-privacy-policy-page-and-any-other-page-or-component-that-references-the-store-name",
+      "title": "Replace all occurrences of the current brand/store name (e.g., 'SmartLiving Store', 'Smart Living Store', or any placeholder brand name) with 'Helping Hand' across every frontend file where the brand name appears, including the Header logo text, Footer brand name, page titles, About page, Terms & Conditions page, Privacy Policy page, and any other page or component that references the store name.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Homepage with hero section, featured collections, best-sellers, limited-time offers, testimonials, Why Choose Us, newsletter, and footer",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "15 product categories including Electronics, Fashion, Home & Kitchen, Beauty, Health, Watches, Baby, Pet, Car, Gaming, Outdoor, Office, Smart Home, Trending",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Product pages with images, description, features, pricing with discount badge, reviews, Add to Cart/Buy Now buttons, trust badges",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Additional pages: About Us, Contact Us, FAQ, Shipping Policy, Return & Refund Policy, Privacy Policy, Terms & Conditions",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Payment integration: Stripe, PayPal, UPI, Credit/Debit Cards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Extra features: abandoned cart recovery, live chat support, multi-currency support, social media integration, email marketing integration",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Mobile-first responsive design with clean minimal layout, white/light background, bold accent color, fast loading UI/UX",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "SEO optimization and readiness for Facebook, Instagram, and Google Ads campaigns",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Create a Product Categories listing page displaying all 15 categories as clickable cards with icon/image, category name, and product count badge. Categories: Electronics & Gadgets, Mobile Accessories, Home & Kitchen, Beauty & Personal Care, Health & Fitness, Fashion (Men & Women), Watches & Jewelry, Baby & Kids Products, Pet Supplies, Car Accessories, Gaming Accessories, Outdoor & Travel, Office & Stationery, Smart Home Devices, Trending & Viral Products. Clicking a category navigates to a filtered product listing page for that category.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Store and manage product catalog data, cart orders, customer reviews, and newsletter subscriptions in the Motoko backend. Expose query and update calls for: listing products (with optional category filter), getting a single product by ID, submitting an order, adding a product review, and subscribing an email to the newsletter. Pre-populate the backend with at least 30 mock products spread across the 15 categories, each with name, description, features array, category, price, discountedPrice, imageUrl, rating, and reviewCount fields.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Create the following static informational pages with full content, consistent header/footer layout, and the site's visual theme: About Us (/about), Contact Us (/contact) with a contact form, FAQ (/faq) with accordion-style Q&A, Shipping Policy (/shipping-policy), Return & Refund Policy (/return-policy), Privacy Policy (/privacy-policy), and Terms & Conditions (/terms).",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Update the backend Motoko actor so that any hardcoded store name or brand name references (e.g., in metadata, email content, or any text field) reflect 'Helping Hand' instead of the previous brand name.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Smart Products Smart Living Dropshipping Store",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
